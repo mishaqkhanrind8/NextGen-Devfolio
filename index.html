@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>NextGen Devfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO Meta -->
+  <meta name="description" content="A modern portfolio website template for web developers and web designers.">
+  <meta name="keywords" content="portfolio, web design, web development, photography, resume, testimonials">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Sidebar (Desktop Only) -->
+  <nav class="sidebar-desktop">
+    <div class="sidebar-bg"></div>
+  </nav>
+
+  <!-- Slide Sidebar (Mobile) -->
+  <nav id="mobileSidebar" class="sidebar-mobile">
+    <button class="close-btn" onclick="closeNav()">
+      <i class="fa fa-remove"></i>
+    </button>
+
+    <div class="sidebar-menu">
+      <a href="#" onclick="closeNav()">Home</a>
+      <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+      <a href="#about" onclick="closeNav()">About</a>
+      <a href="#contact" onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="main">
+
+    <!-- Menu Icon -->
+    <button class="menu-btn" onclick="openNav()">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <!-- Header -->
+    <header id="home" class="header">
+      <h1><b>Ali Khan</b></h1>
+      <p>Web Developer and Web Designer.</p>
+
+      <img src="" alt="Hero Image" loading="eager" decoding="async" fetchpriority="high"
+        width="800" height="400" class="hero-img-sm">
+
+      <img src="" alt="Hero Image" loading="eager" decoding="async" fetchpriority="high"
+        width="800" height="400" class="hero-img-lg">
+
+      <button class="btn-light">
+        <i class="fa fa-download"></i> Download Resume
+      </button>
+    </header>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+      <h2 class="section-title">My Portfolio</h2>
+      <hr class="divider">
+
+      <div class="photo-grid">
+        <div>
+          <img src="" alt="Portfolio Image 1" loading="lazy" width="514" height="369">
+          <img src="" alt="Portfolio Image 2" loading="lazy" width="514" height="369">
+          <img src="" alt="Portfolio Image 3" loading="lazy" width="514" height="369">
+          <img src="" alt="Portfolio Image 4" loading="lazy" width="514" height="369">
+          <img src="" alt="Portfolio Image 5" loading="lazy" width="514" height="369">
+          <img src="" alt="Portfolio Image 6" loading="lazy" width="514" height="369">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section text-block">
+      <h2>About</h2>
+      <hr class="divider">
+
+      <p>
+        Some text about me. Some text about me. I am lorem ipsum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+      </p>
+
+      <h3 class="sub-heading">My Skills</h3>
+
+      <p class="skill-title">Web Development</p>
+      <div class="skill-bar"><div style="width:95%">95%</div></div>
+
+      <p class="skill-title">Web Design</p>
+      <div class="skill-bar"><div style="width:85%">85%</div></div>
+
+      <p class="skill-title">Figma UI</p>
+      <div class="skill-bar"><div style="width:80%">80%</div></div>
+
+      <div class="stats-box">
+        <div><span>14+</span><br>Partners</div>
+        <div><span>55+</span><br>Projects Done</div>
+        <div><span>89+</span><br>Happy Clients</div>
+        <div><span>150+</span><br>Meetings</div>
+      </div>
+
+      <button class="btn-light section-btn">
+        <i class="fa fa-download"></i> Download Resume
+      </button>
+
+      <h3 class="sub-heading">My Reputation</h3>
+
+      <!-- Testimonials -->
+      <div class="testimonial">
+        <img src="/w3images/avatar_smoke.jpg" alt="Chandler Bing" loading="lazy"
+          width="714" height="469" class="avatar">
+        <p><b>Chandler Bing</b> — Web Designer</p>
+        <p>Jane Doe is just awesome. I am so happy to have met her!</p>
+      </div>
+
+      <div class="testimonial">
+        <img src="/w3images/bandmember.jpg" alt="bandmember" loading="lazy"
+          width="714" height="469" class="avatar">
+        <p><b>Chris Fox</b> — CEO, Mighty Schools</p>
+        <p>Jane Doe saved us from a web disaster.</p>
+      </div>
+
+      <div class="testimonial">
+        <img src="/w3images/avatar_g2.jpg" alt="avatar_g2" loading="lazy"
+          width="714" height="469" class="avatar">
+        <p><b>Rebecca Flex</b> — CEO</p>
+        <p>No one is better than Jane Doe.</p>
+      </div>
+
+      <!-- Pricing -->
+      <h3 class="sub-heading">My Price</h3>
+
+      <div class="pricing-grid">
+        <ul class="price-card">
+          <li class="price-header dark">Basic</li>
+          <li>Web Design</li>
+          <li>Photography</li>
+          <li>5GB Storage</li>
+          <li>Mail Support</li>
+          <li class="price-tag">
+            <h2>$10</h2><span>per month</span>
+          </li>
+          <li><button class="btn-white">Sign Up</button></li>
+        </ul>
+
+        <ul class="price-card">
+          <li class="price-header black">Pro</li>
+          <li>Web Design</li>
+          <li>Photography</li>
+          <li>50GB Storage</li>
+          <li>Endless Support</li>
+          <li class="price-tag">
+            <h2>$25</h2><span>per month</span>
+          </li>
+          <li><button class="btn-white">Sign Up</button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+      <hr class="divider">
+     <address>
+      <p><i class="fa fa-map-marker"></i> Multan, Pakistan</p>
+      <p><i class="fa fa-phone"></i> <a href="tel:+923021905493">+92 3021905493</a></p>
+      <p><i class="fa fa-envelope"></i> <a href="mailto:aonemobilesncomputers786@gmail.com">khancode88@gmail.com</a></p>
+     </address>
+      <img src="" alt="Google Map Placeholder" loading="lazy"
+        width="800" height="400" class="map-img">
+
+      <p>Let's get in touch. Send me a message:</p>
+
+      <form action="#" method="post" class="contact-form">
+        <input type="text" placeholder="Name" required>
+        <input type="text" placeholder="Email" required>
+        <input type="text" placeholder="Subject" required>
+        <input type="text" placeholder="Message" required>
+        <button class="btn-light">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <i class="fa fa-facebook-official"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-snapchat"></i>
+      <i class="fa fa-pinterest-p"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+
+      <p class="credit">
+        Powered by <a href="#">NextGen Devfolio</a>
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
