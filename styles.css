@@ -53,12 +53,12 @@ body {
 div.main {
     position: relative;
     margin-left: 430px;
-    padding: 10px;
+    padding: 10px 1rem;
 }
 
 .menu-btn {
     position: fixed;
-    inset: 10px 10px auto auto;
+    inset: 0 0 auto auto;
     color: #444;
     background-color: #fff;
     border: none;
@@ -71,7 +71,7 @@ div.main {
 }
 
 .menu-btn:hover {
-    background-color: #f0f0f0;
+    background-color: #757575;
 }
 
 .header {
@@ -173,8 +173,8 @@ div.main {
     font-family: "Montserrat", sans-serif;
     font-size: 1.5em;
     color: #757575;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
     font-weight: 400;
 }
 
@@ -204,12 +204,21 @@ div.stats-box {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding: 20px;
-    margin-top: 2.3rem;
+    padding: 2.5rem 20px;
+    margin: 50px 0 10px 0;
     border-radius: 8px;
     background-color: #616161;
     color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+div.stats-box div span {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.section-btn {
+    margin-bottom: 2rem;
 }
 
 .btn-light {
@@ -306,6 +315,97 @@ ul.price-card li:not(.price-header) {
 .btn-white:hover {
     background-color: #111;
     color: #fff;
+}
+
+
+address {
+    margin:0 0 2rem; 
+}
+
+address > p i {
+    font-size: 2.3rem !important;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: #616161;
+}
+
+address p a {
+    color: #444;
+    text-decoration: none;
+}
+
+address p a:hover {
+    text-decoration: underline;
+}
+
+.map-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+form.contact-form {
+    margin: 1rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input:focus {
+    border-color: #616161;
+    outline: none;
+}
+
+form .btn-light {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    margin: 0;
+    padding: 12px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+form .btn-light:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    margin: 0 -1rem;
+}
+
+footer i {
+    color: #616161;
+    font-size: 1.5rem !important;
+    margin: 1rem 10px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: #333;
+}
+
+footer p a {
+    color: #444;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 992px) {
